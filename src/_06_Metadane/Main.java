@@ -13,8 +13,4 @@ public class Main {
     public void process() {
         System.out.println("Processing...");
     }
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-    }
 }
