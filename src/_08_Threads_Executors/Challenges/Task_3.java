@@ -26,7 +26,7 @@ public class Task_3 {
         // read results
         for (int i = 0; i < 5; i++) {
             try {
-                int result = futures.get(i).get();
+                int result = futures.get(i).get(); // get future from List and get result from future
                 System.out.printf("CubeNumber #%d result: %d\n\n", i, result);
             } catch (Exception e) {
                 System.out.printf("Issue in executing CubeNumber #%d", i);
