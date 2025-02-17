@@ -1,29 +1,29 @@
-package _09_Threads_Synchronizers._01_Intro;
+package _09_Threads_Synchronizers._02_synchronized;
 
-class Balance {
+class SafeBalance {
     private int number = 0;
 
-    public Balance() {
+    public SafeBalance() {
         System.out.println("Starting...");
     }
 
-    public int balance() {
-        number++; // operacja nieatomowa - moze prowadzic do bledow
-        System.out.println(number);
+
+    public synchronized int balance() {
+        number++;
+        System.out.println(number); // 1 1 1 1 1
         number--;
         return number;
     }
 }
 
-public class Main {
+public class SafeBalanceTest {
     public static void main(String[] args) {
-        Balance balance = new Balance();
+        SafeBalance balance = new SafeBalance();
 
         Runnable task = () -> {
             for (int i = 0; i < 1_000_000; i++) {
                 if (balance.balance() != 0) {
-                    System.out.println("Blad!");
-                    break;
+                    System.out.println("Error!");
                 }
             }
         };
