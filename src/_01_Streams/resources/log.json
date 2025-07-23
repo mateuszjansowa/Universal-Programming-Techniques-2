@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2023-10-27T10:00:00Z",
+    "level": "info",
+    "message": "User logged in successfully",
+    "user_id": "abc123",
+    "ip_address": "192.168.1.1"
+  },
+  {
+    "timestamp": "2023-10-27T10:01:17Z",
+    "level": "warning",
+    "message": "User attempted to access unauthorized resource",
+    "user_id": "xyz987",
+    "ip_address": "172.16.0.5"
+  },
+  {
+    "timestamp": "2023-10-27T10:03:21Z",
+    "level": "info",
+    "message": "User logged out",
+    "user_id": "lmn456",
+    "ip_address": "10.0.0.3"
+  },
+  {
+    "timestamp": "2023-10-27T10:05:09Z",
+    "level": "error",
+    "message": "Login failed due to invalid credentials",
+    "user_id": "stu678",
+    "ip_address": "192.168.1.50"
+  },
+  {
+    "timestamp": "2023-10-27T10:07:12Z",
+    "level": "info",
+    "message": "Password changed successfully",
+    "user_id": "pqr321",
+    "ip_address": "10.1.2.5"
+  },
+  {
+    "timestamp": "2023-10-27T10:10:34Z",
+    "level": "info",
+    "message": "User session expired",
+    "user_id": "def222",
+    "ip_address": "172.16.1.2"
+  },
+  {
+    "timestamp": "2023-10-27T10:12:45Z",
+    "level": "info",
+    "message": "User logged in successfully",
+    "user_id": "ghi789",
+    "ip_address": "192.168.1.22"
+  },
+  {
+    "timestamp": "2023-10-27T10:14:18Z",
+    "level": "error",
+    "message": "Failed to update user profile",
+    "user_id": "uvw555",
+    "ip_address": "10.0.0.10"
+  },
+  {
+    "timestamp": "2023-10-27T10:16:00Z",
+    "level": "info",
+    "message": "User logged in successfully",
+    "user_id": "klm345",
+    "ip_address": "172.16.2.12"
+  },
+  {
+    "timestamp": "2023-10-27T10:18:29Z",
+    "level": "warning",
+    "message": "Multiple failed login attempts detected",
+    "user_id": "stu678",
+    "ip_address": "192.168.1.50"
+  }
+]
